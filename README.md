@@ -26,38 +26,30 @@ limitations under the License.
 
 > Flatten a two-dimensional nested array according to a callback function.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/array-base-flatten2d-by
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-flatten2dBy = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-flatten2d-by@umd/browser.js' )
-```
-
-To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
-
-```javascript
-var flatten2dBy = require( 'path/to/vendor/umd/array-base-flatten2d-by/index.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-flatten2d-by@umd/browser.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.flatten2dBy;
-})();
-</script>
+var flatten2dBy = require( '@stdlib/array-base-flatten2d-by' );
 ```
 
 #### flatten2dBy( x, shape, colexicographic, clbk\[, thisArg] )
@@ -160,15 +152,10 @@ y = flatten2dBy.assign( x, [ 2, 2 ], true, out, 1, 0, scale );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/utils-nary-function@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-abs@umd/browser.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/array-base-flatten2d-by@umd/browser.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var naryFunction = require( '@stdlib/utils-nary-function' );
+var abs = require( '@stdlib/math-base-special-abs' );
+var flatten2dBy = require( '@stdlib/array-base-flatten2d-by' );
 
 var fcn = naryFunction( abs, 1 );
 
@@ -208,11 +195,6 @@ out = flatten2dBy( x, [ 4, 4 ], false, fcn );
 
 out = flatten2dBy( x, [ 4, 4 ], true, fcn );
 // returns [ 1, 5, 9, 13, 2, 6, 10, 14, 3, 7, 11, 15, 4, 8, 12, 16 ]
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
