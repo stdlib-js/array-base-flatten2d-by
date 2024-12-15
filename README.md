@@ -218,6 +218,12 @@ out = flatten2dBy( x, [ 4, 4 ], true, fcn );
 
 <section class="related">
 
+* * *
+
+## See Also
+
+-   <span class="package-name">[`@stdlib/array-base/flatten2d`][@stdlib/array/base/flatten2d]</span><span class="delimiter">: </span><span class="description">flatten a two-dimensional nested array.</span>
+
 </section>
 
 <!-- /.related -->
@@ -293,6 +299,12 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 [branches-url]: https://github.com/stdlib-js/array-base-flatten2d-by/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/array-base-flatten2d-by/main/LICENSE
+
+<!-- <related-links> -->
+
+[@stdlib/array/base/flatten2d]: https://github.com/stdlib-js/array-base-flatten2d
+
+<!-- </related-links> -->
 
 </section>
 
